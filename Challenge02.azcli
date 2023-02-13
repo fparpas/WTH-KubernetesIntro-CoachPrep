@@ -1,0 +1,7 @@
+# Create and push images in ACR
+az acr build --resource-group WTH-KubernetesIntro-CoachPrep --image wth/content-api:v1 C:\Users\phanisparpas.MIDDLEEAST\source\repos\WTH-KubernetesIntro-CoachPrep\Resources\Challenge-01\content-api --registry wthkubernetesintroreg --file "C:\Users\phanisparpas.MIDDLEEAST\source\repos\WTH-KubernetesIntro-CoachPrep\Resources\Challenge-02\content-api\Dockerfile"
+az acr build --resource-group WTH-KubernetesIntro-CoachPrep --image wth/content-web:v1 C:\Users\phanisparpas.MIDDLEEAST\source\repos\WTH-KubernetesIntro-CoachPrep\Resources\Challenge-01\content-web --registry wthkubernetesintroreg --file "C:\Users\phanisparpas.MIDDLEEAST\source\repos\WTH-KubernetesIntro-CoachPrep\Resources\Challenge-02\content-web\Dockerfile"
+
+# List repositories
+az acr repository --name wthkubernetesintroreg 
+
