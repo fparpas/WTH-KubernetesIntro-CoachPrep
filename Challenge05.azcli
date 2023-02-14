@@ -1,0 +1,1 @@
+az aks nodepool scale --resource-group WTH-KubernetesIntro-CoachPrep --cluster-name AKS --name nodepool1 --node-count 1
